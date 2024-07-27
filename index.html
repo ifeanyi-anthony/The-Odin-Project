@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Odin Project - exercise two</title>
+    <style>
+        body {
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: inter;
+        }
+        .section-1 {
+            display: flex;
+            flex-direction: column;
+            background-color:#1f2937 ;
+            justify-content: center;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20%;
+        }
+    .navbar p {
+        font-size: 18px;
+        font-weight: bolder;
+        color: #fff;
+    }
+
+    .navbar ul {
+        display: flex;
+        gap: 20px;
+    }
+    .navbar li {
+        list-style: none;
+    }
+    .navbar a {
+        text-decoration: none;
+        color: #fff;
+    }
+    .hero-section {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 0 20%;
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        gap: 30px;
+    }
+    .left-section {
+        width: 50%;
+    }
+    .right-section {
+        display: flex;
+        width: 50%;
+        background-color: #ffffff75;
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    #bold-text {
+        font-weight: bolder;
+        font-size: 30px;
+        margin: 0;
+        color: #fff;
+    }
+    #hero-text {
+        color: #fff;
+    }
+    #hero-button {
+        padding: 5px 15px;
+        background-color:#3882f6 ;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 25%;
+        justify-content: center;
+    }
+    #info {
+        font-weight: bold;
+        text-align: center;
+    }
+    .card-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        margin-top: 20px;
+    }
+    #card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #img {
+        width: 100px;
+        height: 100px;
+        border: 2px solid #3882f6;
+        border-radius: 5px;
+    }
+    #img-text {
+        text-align: center;
+        font-size: 14px;
+    }
+    .section-3 {
+        display: flex;
+        flex-direction: column;
+        padding: 0 20%;
+        background-color: #e5e7eb;
+        padding-top: 20px;
+    }
+    blockquote {
+        text-align: right;
+        font-weight: bolder;
+    }
+    .section-4 {
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        padding: 7% 16%;
+    }
+    .cta-section {
+        padding: 5% 15%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #3882f6;
+        border-radius: 5px;
+        color: #fff;
+    }
+    #cta-section-btn {
+        border: 2px solid #fff;
+        padding: 5px 15px;
+        border-radius: 5px;
+        color: #fff;
+        background-color: #3882f6;
+    }
+    .footer {
+        background-color: #1f2937;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        padding: 10px 0;
+    }
+    </style>
+</head>
+<body>
+    <div class="section-1">
+        <div class="navbar">
+            <p>Header Logo</p>
+            <ul>
+                <li><a href="#">header link one</a></li>
+                <li><a href="#">header link two</a></li>
+                <li><a href="#">header link three</a></li>
+            </ul>
+        </div>
+        <div class="hero-section">
+            <div class="left-section">
+                <p id="bold-text">This website is awesome</p>
+                <p id="hero-text">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum, doloribus adipisci quae.
+                </p>
+                <button id="hero-button">Sign up</button>
+            </div>
+            <div class="right-section">
+                <p id="img-text">
+                    this is a placeholder for an image
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-2">
+        <p id="info">
+            Some random information.
+        </p>
+        <div class="card-section">
+            <div id="card">
+                <div id="img"></div>
+                <p id="img-text">
+                    Lorem ipsum dolor sit amet consectetur. 
+                </p>
+            </div>
+            <div id="card">
+                <div id="img"></div>
+                <p id="img-text">
+                    Lorem ipsum dolor sit amet consectetur. 
+                </p>
+            </div>
+
+            <div id="card">
+                <div id="img"></div>
+                <p id="img-text">
+                    Lorem ipsum dolor sit amet consectetur. 
+                </p>
+            </div>
+
+            <div id="card">
+                <div id="img"></div>
+                <p id="img-text">
+                    Lorem ipsum dolor sit amet consectetur. 
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="section-3">
+        <p id="quote-text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere porro recusandae excepturi vel aliquam nam sapiente minima, temporibus esse error. Expedita tempora atque earum dignissimos libero quam. Exercitationem, unde expedita?
+        </p>
+        <blockquote>-Thor <i>god of Thunder</i></blockquote>
+    </div>
+    <div class="section-4">
+        <div class="cta-section">
+            <p>
+                Call to action! <br>
+                Sign up for our product by clicking that button right there!
+            </p>
+            <button id="cta-section-btn">Sign up</button>
+        </div>
+
+    </div>
+    <div class="footer">
+        Copyright &#169 The Odin project 2021
+    </div>
+</body>
+</html>
