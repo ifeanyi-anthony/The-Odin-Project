@@ -9,7 +9,9 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            gap: 20px;
         }
+
         button {
             border: none;
             background-color: #2828ff;
@@ -19,12 +21,33 @@
             padding: 10px 20px;
             border-radius: 5px;
         }
+        #btn-logout {
+            border: 1px solid #07d307;
+            background-color: #ffffff;
+            color: #07d307;
+            font-family: inter;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;   
+        }
+        #btn-logout:hover {
+            border: none;
+            background-color: #07d307;
+            color: #fff;
+            font-family: inter;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;   
+        }
     </style>
 </head>
 <body>
     <div class="btn-container">
         <button>
             Sign up
+        </button>
+        <button id="btn-logout">
+            Log out
         </button>
     </div>
 </body>
